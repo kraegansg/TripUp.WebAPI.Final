@@ -2,6 +2,8 @@ VideoGameFinderDLC.API
 
 TRIP UP 
 
+AZURE LINK: https://tripup.azurewebsites.net/
+
 TRIP UP is a C# WEB API that builds, edits, views, and deletes travel preparation information. 
 
 Trip Up is all about the preparation ahead of taking a trip.  Whether it’s a solo day trip downtown, a weekend getaway with the whole family, or the coast-to-coast adventures that may take a week or two. 
