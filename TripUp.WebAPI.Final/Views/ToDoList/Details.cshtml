@@ -1,0 +1,66 @@
+﻿@model TripUp.Models.ToDoListDetail
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>ToDoListDetail</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.ToDoListId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ToDoListId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PetCare)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PetCare)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ChildCare)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ChildCare)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.HouseCare)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.HouseCare)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ToDoMisc)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ToDoMisc)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ToDoListName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ToDoListName)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ToDoListId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
