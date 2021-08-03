@@ -170,6 +170,10 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\PackController.cs" />
+    <Compile Include="Controllers\ToDoListController.cs" />
+    <Compile Include="Controllers\TravelController.cs" />
+    <Compile Include="Controllers\TripController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -237,6 +241,10 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Views\Pack\" />
+    <Folder Include="Views\ToDoList\" />
+    <Folder Include="Views\Travel\" />
+    <Folder Include="Views\Trip\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
@@ -250,6 +258,20 @@
     <None Include="packages.config" />
     <Content Include="Scripts\jquery-3.4.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.4.1.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\TripUp.Data\TripUp.Data.csproj">
+      <Project>{ca20ca56-c032-4995-8d83-5dd3f9dd9287}</Project>
+      <Name>TripUp.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TripUp.Models\TripUp.Models.csproj">
+      <Project>{87a6b9a3-66c4-42d0-93ac-29dcebd88849}</Project>
+      <Name>TripUp.Models</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TripUp.Services\TripUp.Services.csproj">
+      <Project>{8afb9d22-0e4f-4d8a-9141-f419cf5b2e11}</Project>
+      <Name>TripUp.Services</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

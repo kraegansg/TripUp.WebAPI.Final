@@ -8,6 +8,7 @@ namespace TripUp.Models
 {
     public class ToDoListEdit
     {
+        public int ToDoListId { get; set; }
         public string PetCare { get; set; }
         public string ChildCare { get; set; }
         public string HouseCare { get; set; }

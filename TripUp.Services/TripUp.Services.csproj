@@ -54,11 +54,25 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="PackService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ToDoListService.cs" />
+    <Compile Include="TravelService.cs" />
+    <Compile Include="TripService.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\TripUp.Data\TripUp.Data.csproj">
+      <Project>{ca20ca56-c032-4995-8d83-5dd3f9dd9287}</Project>
+      <Name>TripUp.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TripUp.Models\TripUp.Models.csproj">
+      <Project>{87a6b9a3-66c4-42d0-93ac-29dcebd88849}</Project>
+      <Name>TripUp.Models</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

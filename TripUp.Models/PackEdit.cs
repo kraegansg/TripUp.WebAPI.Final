@@ -8,7 +8,7 @@ namespace TripUp.Models
 {
     public class PackEdit
     {
-        //public int PackId { get; set; }
+        public int PackId { get; set; }
         public string Clothes { get; set; }
         public string BathItems { get; set; }
         public string Essentials { get; set; }
