@@ -20,7 +20,9 @@ Save all your information for future trips
 How it works:
 Trip Up Web API is fully equipped with CRUD that permits user to log in, then create, view, update, or delete travel information, packing lists, to do lists, and a full trip summary.
 
-IMPORTANT: The site follows a linear build, that starts with Trip, then Pack, then To Do List, then Travel summary.  It is best to follow the navigation links in this order to assure you're building
+IMPORTANT: 
+- You must log in or register account to view all information tied to your account 
+- The site follows a linear build, that starts with Trip, then Pack, then To Do List, then Travel summary.  It is best to follow the navigation links in this order to assure you're building
 your trip with the correct details. 
 
 
