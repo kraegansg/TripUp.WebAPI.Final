@@ -4,13 +4,16 @@
     ViewBag.Title = "Edit";
 }
 
-<h2>Edit</h2>
+<div class="col-md-12">
+    <img alt="logo" src="~/Assets/FinalLogo_edited.jpg" />
+</div>
+<h2>Edit your pack list information:</h2>
 
 
 @using (Html.BeginForm())
 {
     @Html.AntiForgeryToken()
-    
+
     <div class="form-horizontal">
         <h4>PackEdit</h4>
         <hr />

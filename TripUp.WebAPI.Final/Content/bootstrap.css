@@ -38,6 +38,14 @@ audio:not([controls]) {
   display: none;
   height: 0;
 }
+
+
+.new_item_model {
+
+}
+
+
+
 [hidden],
 template {
   display: none;
@@ -5035,8 +5043,8 @@ a.badge:focus {
   padding-top: 30px;
   padding-bottom: 30px;
   margin-bottom: 30px;
-  color: inherit;
-  background-color: #eeeeee;
+
+
 }
 .jumbotron h1,
 .jumbotron .h1 {
@@ -5048,7 +5056,7 @@ a.badge:focus {
   font-weight: 200;
 }
 .jumbotron > hr {
-  border-top-color: #d5d5d5;
+
 }
 .container .jumbotron,
 .container-fluid .jumbotron {

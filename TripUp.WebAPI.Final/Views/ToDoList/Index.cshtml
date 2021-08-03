@@ -3,8 +3,10 @@
 @{
     ViewBag.Title = "Index";
 }
-
-<h2>Index</h2>
+<div class="col-md-12">
+    <img alt="logo" src="~/Assets/FinalLogo_edited.jpg" />
+</div>
+<h2>To Do Lists</h2>
 
 <p>
     @Html.ActionLink("Create New", "Create")
@@ -33,31 +35,43 @@
     </tr>
 
 @foreach (var item in Model) {
-    <tr>
-        <td>
-            @Html.DisplayFor(modelItem => item.ToDoListId)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.PetCare)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.ChildCare)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.HouseCare)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.ToDoMisc)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.ToDoListName)
-        </td>
-        <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.ToDoListId }) |
-            @Html.ActionLink("Details", "Details", new { id = item.ToDoListId }) |
-            @Html.ActionLink("Delete", "Delete", new { id = item.ToDoListId })
-        </td>
-    </tr>
+<tr>
+
+    <td>
+        @Html.DisplayFor(modelItem => item.ToDoListId)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.ToDoListName)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.PetCare)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.ChildCare)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.HouseCare)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.ToDoMisc)
+    </td>
+
+    <td>
+        @Html.ActionLink("Edit", "Edit", new { id = item.ToDoListId }) |
+        @Html.ActionLink("Details", "Details", new { id = item.ToDoListId }) |
+        @Html.ActionLink("Delete", "Delete", new { id = item.ToDoListId })
+    </td>
+</tr>
 }
 
 </table>
+<div class="row">
+    <div class="col-md-6">
+        <p><a class="btn btn-default" href="https://localhost:44367/ToDoList/Create">Create New To-Do List &raquo;</a></p>
+
+    </div>
+    <div class="col-md-6">
+
+        <p><a class="btn btn-default" href="https://localhost:44367/Trip/Create">Finalize Your Trip &raquo;</a></p>
+    </div>
+</div>

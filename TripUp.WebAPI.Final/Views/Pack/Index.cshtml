@@ -4,7 +4,10 @@
     ViewBag.Title = "Index";
 }
 
-<h2>Index</h2>
+<div class="col-md-12">
+    <img alt="logo" src="~/Assets/FinalLogo_edited.jpg" />
+</div>
+<h2>Pack Lists</h2>
 
 <p>
     @Html.ActionLink("Create New", "Create")
@@ -32,32 +35,43 @@
         <th></th>
     </tr>
 
-@foreach (var item in Model) {
-    <tr>
-        <td>
-            @Html.DisplayFor(modelItem => item.PackId)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Clothes)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.BathItems)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Essentials)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Other)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.PackName)
-        </td>
-        <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.PackId }) |
-            @Html.ActionLink("Details", "Details", new { id = item.PackId }) |
-            @Html.ActionLink("Delete", "Delete", new { id = item.PackId })
-        </td>
-    </tr>
-}
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.PackId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Clothes)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.BathItems)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Essentials)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Other)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PackName)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { id = item.PackId }) |
+                @Html.ActionLink("Details", "Details", new { id = item.PackId }) |
+                @Html.ActionLink("Delete", "Delete", new { id = item.PackId })
+            </td>
+        </tr>
+    }
 
 </table>
+<div class="row">
+    <div class="col-md-6">
+
+        <p><a class="btn btn-default" href="https://localhost:44367/Pack/Create">Create New Pack &raquo;</a></p>
+    </div>
+    <div class="col-md-6">
+
+        <p><a class="btn btn-default" href="https://localhost:44367/ToDoList/Create">Create A To-Do List &raquo;</a></p>
+    </div>
+</div>

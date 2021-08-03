@@ -3,8 +3,10 @@
 @{
     ViewBag.Title = "Edit";
 }
-
-<h2>Edit</h2>
+<div class="col-md-12">
+    <img alt="logo" src="~/Assets/FinalLogo_edited.jpg" />
+</div>
+<h2>Edit Travel</h2>
 
 
 @using (Html.BeginForm())
@@ -12,7 +14,7 @@
     @Html.AntiForgeryToken()
     
     <div class="form-horizontal">
-        <h4>TravelEdit</h4>
+        <h4>Edit your travel information:</h4>
         <hr />
         @Html.ValidationSummary(true, "", new { @class = "text-danger" })
         @Html.HiddenFor(model => model.TravelId)

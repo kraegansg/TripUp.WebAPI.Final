@@ -4,11 +4,11 @@
     ViewBag.Title = "Index";
 }
 
-<h2>Index</h2>
+<div class="col-md-12">
+    <img alt="logo" src="~/Assets/FinalLogo_edited.jpg" />
+</div>
+<h2>Trip List</h2>
 
-<p>
-    @Html.ActionLink("Create New", "Create")
-</p>
 <table class="table">
     <tr>
         <th>
@@ -59,59 +59,71 @@
         <th></th>
     </tr>
 
-@foreach (var item in Model) {
-    <tr>
-        <td>
-            @Html.DisplayFor(modelItem => item.TripId)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.TripName)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Favorite)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Destination)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.StartingLocation)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.TravelBuddies)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.PitStops)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Clothes)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.BathItems)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Essentials)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Other)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.PetCare)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.ChildCare)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.HouseCare)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.ToDoMisc)
-        </td>
-        <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.TripId }) |
-            @Html.ActionLink("Details", "Details", new { id = item.TripId }) |
-            @Html.ActionLink("Delete", "Delete", new { id = item.TripId })
-        </td>
-    </tr>
-}
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.TripId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TripName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Favorite)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Destination)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.StartingLocation)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TravelBuddies)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PitStops)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Clothes)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.BathItems)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Essentials)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Other)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PetCare)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ChildCare)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.HouseCare)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ToDoMisc)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { id = item.TripId }) |
+                @Html.ActionLink("Details", "Details", new { id = item.TripId }) |
+                @Html.ActionLink("Delete", "Delete", new { id = item.TripId })
+            </td>
+        </tr>
+    }
 
 </table>
+<div class="row">
+    <div class="col-md-6">
+        <p><a class="btn btn-default" href="https://localhost:44367/Trip/Create">Create New Trip &raquo;</a></p>
+
+    </div>
+    <div class="col-md-6">
+
+        <p><a class="btn btn-default" href="https://localhost:44367/Travel/Create">Start Over &raquo;</a></p>
+    </div>
+
+</div>
