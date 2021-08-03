@@ -8,7 +8,7 @@ namespace TripUp.Models
 {
     public class TripDetail
     {
-        public int TripId { get; set; }
+        public int TripId { get; set; } 
         public string TripName { get; set; }
         public bool Favorite { get; set; }
         public string Destination { get; set; }
